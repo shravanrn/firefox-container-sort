@@ -1,6 +1,9 @@
 # Firefox container alphabetical sort
 
-Sort firefox containers by name. The script reads container.json and outputs a new value for "container-order" which is the sorted containers. Users must take this output, and manually replace the local storage of the containers addons.
+Sort firefox containers by name. The script reads container.json. It then:
+
+- Updates container.json with a sorted profile list so that the order of entries in the "Open in New Container Tab" context menu works as expected. The old container.json is backed up as container.jsonTimeStamp.bak
+- It outputs a new value for "container-order" which is the sorted containers. Users must take this output, and manually replace the local storage of the containers addons.
 
 To use the script
 
